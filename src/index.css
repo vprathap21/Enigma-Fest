@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes glowing {
+    0% {
+      background-color: yellow; /* Gold color */
+      box-shadow: 0 0 40px yellow, 0 0 80px yellow, 0 0 120px yellow; /* Multiple shadow layers */
+    }
+    50% {
+      background-color: greenyellow; /* Lighter gold */
+      box-shadow: 0 0 40px goldenrod, 0 0 60px goldenrod, 0 0 80px goldenrod; /* Increase intensity */
+    }
+    100% {
+      background-color: yellow; /* Back to gold */
+      box-shadow: 0 0 40px yellow, 0 0 80px yellow, 0 0 120px yellow; /* Same as initial */
+    }
+  }
+  
